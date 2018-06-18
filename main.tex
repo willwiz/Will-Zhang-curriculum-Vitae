@@ -1,0 +1,377 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Document Type											%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+\usepackage{setspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Document Layout										%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin = 0.75in, headheight=14.5pt}%, headsep=10pt}
+
+%\usepackage{hyperref}
+\usepackage{url}
+\usepackage{multirow, ltxtable}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{breakcites}
+\usepackage{indentfirst}
+
+% \usepackage{natbib}
+% \usepackage{bibentry}
+
+\newcommand{\myname}[1]{\underline{Zhang, W.}}
+
+\usepackage[resetlabels]{multibib}
+\newcites{pub,conf,pos}{publications,conference,poster}
+\bibliographystylepub{plainrevyr}
+\bibliographystyleconf{plainrevyr}
+\bibliographystylepos{plainrevyr}
+
+\usepackage{xpatch}
+\makeatletter
+\newcommand\removebibheader
+  {\xpatchcmd\std@thebibliography
+    {\section*{\refname}%
+     \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+    }{}{}{}%
+  }
+\makeatother
+
+\usepackage{printlen}
+
+\RequirePackage{titlecaps}
+
+\usepackage{titlesec}
+\titlelabel{\thetitle. }
+\titlespacing*{\section}{0pt}{\baselineskip}{0\baselineskip}
+
+\titleformat*{\section}{\bfseries\MakeUppercase}
+\titleformat*{\subsection}{\bfseries}
+\titleformat*{\subsubsection}{\bfseries}
+\titleformat*{\paragraph}{\bfseries}
+\titleformat*{\subparagraph}{\bfseries}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{Curriculum Vitae} Pg.\thepage}
+\lhead{Will Zhang \textit{B.Sc}}
+\renewcommand{\headrulewidth}{1pt}
+
+
+\renewcommand\thesection{\Alph{section}}
+
+\title{Will Zhang curriculum Vitae}
+
+\begin{document}
+
+% Create the title section ----------------------------------------------
+% Make the name and title
+%\newgeometry{a4paper, portrait, margin = 0.5in, top=0.5in}
+\vspace*{-0.35in}
+
+\thispagestyle{empty}
+
+\noindent
+% \begin{tabularx}{\textwidth}{@{}X @{}r}
+% \Large{\textbf{Will Zhang}}, \textit{B.Sc.} & \textit{Curriculum Vitae}\\
+% \end{tabularx}
+% \begin{center}
+% \Large{\textbf{Will Zhang}}, \normalsize\textit{B.Sc.} \\
+% \textit{Curriculum Vitae}
+% \end{center}
+\begin{center}
+\LARGE{\textbf{Will Zhang}}, \large \textit{B.Sc.} \LARGE \textbar \Large\textit{Curriculum Vitae}
+\end{center}
+
+\large
+\vspace{-2ex}
+\noindent \makebox[\linewidth]{\rule{\textwidth}{1.0pt}} 
+\normalsize
+
+\vspace{1ex}
+
+% make personal info
+\noindent
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} @{}X}
+\multicolumn{1}{r}{\bf Affiliation:}
+	& Willerson Center for Cardiovascular Modeling and Simulation	\\
+    & Institute for Computational Engineering and Sciences	\\
+	& Department of Biomedical Engineering 	\\
+	& The University of Texas at Austin 	\\
+\multicolumn{1}{r}{\bf Address:}
+	& 201 East 25\textsuperscript{th} Street 	\\ 
+    & Austin, TX, 78712	\\
+\multicolumn{1}{r}{\bf Phone:}
+	& (832) 436-8462	\\
+\multicolumn{1}{r}{\bf Emails:}
+	& \href{mailto:willwiz@utexas.edu}{willwiz@utexas.edu}, 
+    \href{mailto:willwz@gmail.edu}{willwz@gmail.com}	\\
+\end{tabularx}
+
+% \begin{tabularx}{\textwidth}{@{}X @{}r}
+%  Willerson Center for Cardiovascular Modeling and Simulation \\
+%  Institute for Computational Engineering and Sciences \\
+%  Department of Biomedical Engineering \\
+%  The University of Texas at Austin \\
+%  201 East 25\textsuperscript{th} Street & (832) 436-8462\\             
+% Austin, TX, 78712  &  \href{mailto:willwiz@utexas.edu}{willwiz@utexas.edu}\\
+% \end{tabularx}
+
+
+
+\vspace{1ex}
+
+\noindent\emph{Currently seeking post-doctoral research opportunities in the area of multiscale modeling of fibrous soft tissue and engineered fibrous materials. I am specifically interested in how the mechanical properties of these tissues change over time due to growth and other remodeling processes, as well as how they are impacted by diseases, pathologies and other  immunologic processes.}
+
+%-----------------------------------------------------------------------------
+
+
+
+% Make the education section-----------------------------------------
+
+% make the section title
+
+\section{Education and Training}
+\hrule
+\normalsize
+\vspace{1em}
+\noindent
+\begin{tabular}{c|c|c|c}
+\hline
+\multicolumn{1}{>{\centering\arraybackslash}m{0.45\textwidth}}{INSTITUTION AND LOCATION} 
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.1\textwidth}}{DEGREE}
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.15\textwidth}}{Completion Date (MM/YYYY)}
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.20\textwidth}}{FIELD OF STUDY}	\\
+\hline
+\multicolumn{1}{>{\flushleft\arraybackslash}m{0.45\textwidth}}{University of British Columbia} 
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.1\textwidth}}{B.Sc.}
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.15\textwidth}}{05/2011}
+    & \multicolumn{1}{|>{\flushleft\arraybackslash}m{0.20\textwidth}}{Honours Biophysics}	\\
+\multicolumn{1}{>{\flushleft\arraybackslash}m{0.45\textwidth}}{The University of Texas, Austin} 
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.1\textwidth}}{Ph.D.}
+    & \multicolumn{1}{|>{\centering\arraybackslash}m{0.15\textwidth}}{05/2018 Expected}
+    & \multicolumn{1}{|>{\flushleft\arraybackslash}m{0.20\textwidth}}{Biomedical Engineering}	\\
+\end{tabular}
+%-----------------------------------------------------------------------------
+
+
+
+% Make the RESEARCH INTEREST section---------------------------
+
+% make the section title
+\section{Research Focus}
+\hrule
+\normalsize
+
+\vspace{1eM}
+
+	My research is focused on the use of simulation, at the molecular or organ-level, to explore the underlying mechanisms responsible for the function of biological tissues or tissue derived biomaterials, as well as perform predictive \textit{in vivo} simulations of mechanical function. The approach I used involves the integration of experimental data, multiscale modeling and simulations that utilize the underlying structure and mechanisms to predict the mechanical response of normal and pathological tissues, thereby allowing us to predict how the tissues evolve geometrically and mechanical over time due to internal factors such as growth and remodeling and external factors such as diseases and fatigue damage. My research so far has been focused at the fiber to tissue and organ-level. 
+	
+	One of my first project is to develop an improved method for analyzing biaxial mechanical data and find improvements to the currently biaxial testing instruments to better capture the mechanical properties of soft tissues. We tackled two fundamental problems with the current methods for mechanical testing of soft tissues: enforcing the conservation of momentum and testing soft tissues under shear. Our goal was to obtain the most accurate mechanical data possible for the development of constitutive models. The rest of my work is focused on the using of structural modeling approaches, as well as experimentally measure structural information to model and predict the mechanical response of fibrous soft tissues such as pulmonary arteries, bovine pericardium, and mitral valves. We were also the first ones to extend the structural models to included fiber-fiber interactions and fiber-matrix interactions, and shown that structural information can be used model and predict the mechanical response of exogenously crosslinked tissue used to fabricate bioprosthetic heart valves. Our goal is to be able to used how the microstructures of fibrous soft tissues change over time due to growth and other remodeling effect to predict how the mechanical properties of these tissue change over time. One example is the constitutive model we developed for the changes in geometry in response to cyclic utilizing the permanent set effect in exogenously crosslinked soft collagenous tissue. This involve using the scission-healing reaction of glutaraldehyde as the mechanism for the evolution of the reference configuration of the exogenously crosslinked matrix of the tissue. We can combine what we learned to give guidance to optimize surgical interventions and predict surgical outcomes, as well as use what we learn from modeling and simulating biological tissues to optimize the design of surgical replacements (such as bioprosthetic heart valves and the use of cell seeded hydrogels to replace cartilage and damage organs) and simulate how they perform \textit{in vivo}. 
+	
+	In pursuit of my academic career, i seek post doctorate opportunities to continue my research. The two areas that I am currently most interested in pursuing next are:
+
+\begin{enumerate}
+
+\item \textbf{Exploring the mechanisms underlying the mechanical function of fibrous materials}. Particularly investigating the mechanisms behind the mechanical response of collagen and other fibers in biological tissues using molecular dynamics simulations. Presently investigating and modeling of collagenous and other fibrous tissues are done through tissue level experimentation. This limits how we can explore the underlying mechanism of the structural proteins work together to maintain the mechanical properties of the tissue. What's particular not well understood is how native and exogenous crosslinking of the collagen fibers and the extracellular matrix affect the mechanical response at the tissue level, and fiber-fiber interactions effect. By bridging the molecular level model to the constitutive model of the tissue, we can better predict the mechanical response of the tissue especially after adaptation and remodeling due to growth or fatigue. 
+
+\item \textbf{Growth and remodeling of collagenous tissues and other fibrous biomaterials}. One increasingly popular field in the development of cell embedded degradable biomaterials which can be replaced by native tissue overtime by the human body. However, the constitutive modeling and basic understanding of the biomechanics of the material is severely lacking. Without a predictive model of the mechanical response of these materials, particularly how the mechanical response will adapt over time due to growth and remodeling with the human body, the development of these biomaterials faces a major bottle neck preventing them from being truly utilized in a medical setting.
+
+\item \textbf{Cell modeling and cell modulated growth and remodeling}. The most fundamental and important factor affecting the adaptation of biological tissues to diseases, pathology, and other external stimuli is the behavior of cells in response to these factors. Thus, understanding the response of interstitial cells in response to external mechanical and chemical stimuli is  an important part of being able to construct predictive simulations at a tissue or organ-level. A crucial step towards this goal is to extend current model of cell to the complete mechanical extracellular environment to better understand the affect of tissue level stimuli at the cellular level, and then through models of cellular processes to predict how the surrounding extra-cellular matrix will be remodeled.
+
+\end{enumerate}
+
+%-----------------------------------------------------------------------------
+
+
+
+% Make the AWARDS AND HONOURS section----------------------
+
+% make the section title
+\section{Awards and Honors}
+\hrule
+\normalsize
+
+\vspace{1em}
+
+\begin{tabular}{p{0.65in} l}		
+	2016	&	SB\textsuperscript{3}C PhD-level Student Paper Competition Finalist\\
+	2015	&	George J. Heuer, Jr. Ph.D. Endowed Graduate Fellowship\\
+	2010	&	Trek Excellence Scholarship (Top 5\%)\\
+	2007-09	&	Dean’s Honor List\\
+	2007	&	Presidents Entrance Scholarship, UBC\\
+    2007	&	Provincial Scholarship Award, British Columbia\\
+	2006-07	&	Certificate of Distinction for Euclid\\	
+\end{tabular}
+
+%-----------------------------------------------------------------------------
+
+
+
+% Make the Skills and Experience section----------------------
+
+% make the section title
+\section{Skills and Experience}
+\hrule
+\normalsize
+
+\noindent
+
+\begin{longtable}{p{0.1\textwidth} p{0.9\textwidth}}
+\multicolumn{1}{r}{\bf Languages:}
+	& English, Chinese	\\
+\multicolumn{1}{r}{\bf Programming:}
+	& Matlab, Mathematica, C++, and Python	\\
+\multicolumn{1}{r}{\bf Softwares:}
+	& Word, Excel, Powerpoint, LaTex	\\
+\multicolumn{1}{r}{\bf OS:}
+	& Windows, Macintosh and Linux	\\
+\multicolumn{1}{r}{\bf Technical:}
+	& Extensive experience with mechanical testing of soft tissues	\\
+    & Extensive experience with analysis of mechanical responses	\\
+    & Parameter estimation and optimization	\\
+    & Finite Element simulations using FEniCS	\\
+\end{longtable}
+
+
+%-----------------------------------------------------------------------------
+
+
+
+
+
+% Make the RESEARCH EXPERIENCE section-------------------------
+
+% make the section title
+\section{Research Experience}
+\hrule
+\normalsize
+
+\vspace{1em}
+
+\begin{tabularx}{0.965\textwidth}{X r}
+  \textbf{Graduate Research Assistant} & \textbf{Jan 2012 - Present} \\
+  \textit{Center for Cardiovascular Simulation, UT Austin} & Austin, TX \\
+  \multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{Dissertation Title}: \textit{Simulating the Biomechanical Performance of Exogenously Cross-linked 
+Soft tissue-derived Biomaterials in Response to Cyclic Loading}
+}\\
+ \multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{Modeling and simulation of bioprosthetic heart valves under continuous cyclic loading. First stage include the constitutive modeling of collagenous soft tissue using a meso-scale structural approach, which explores underlying mechanisms in the tissue mechanical response and using it to enhance the predictive capability of the model in computational simulations. Tissue types include the ovine pulmonary artery, bovine pericardium and porcine mitral valve. The model was then extended to include exogenous crosslinking effect typically used in bioprosthetic tissue, and permanent set and structural damage which occurs due to continuous loading. We then implemented the constitutive model for finite element simulation of real bioprosthetic heart valves.
+}\\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{tabularx}{0.965\textwidth}{X r}
+  \textbf{Undergraduate Research Assistant} & \textbf{Sept 2010 - May 2011} \\
+  \textit{Duong Lab, UBC} & Vancouver, BC \\
+\multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{Thesis}: \textit{Evaluation of Binding Conditions for MalFGK and MalE and the Affinity of SecA Binding to 			Dioleophosphatidylglycerol}
+}\\
+\multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{Conducted an experimental study on isolated protein ligand interactions using nano-discs. Specifically analyzing the affinity and binding rate constants between Maltose-FGK transporter and MalE using surface plasmon resonance. Studying the binding mechanisms of membrane proteins is notoriously difficult using conventional assays due to the removal of the cell membrane itself. Nano-discs can be used to isolate single transmembrane proteins within a small patch of phospholipids, allowing us to study the protein in its natural environment. Furthermore, surface plasmon resonance can measure protein binding using the change in the refractive index of a thin layer of such nano-discs when protein-ligand binding occurs.
+}\\
+\end{tabularx}
+
+%-----------------------------------------------------------------------------
+
+
+% Make the TEACHING EXPERIENCE section-------------------------
+
+% make the section title
+\section{Teaching Experience}
+\hrule
+\normalsize
+
+\vspace{1em}
+
+
+\begin{tabularx}{0.965\textwidth}{X r}
+ \textbf{Teaching Assistant} & \textbf{Fall 2011} \\
+ \it Department of Biomedical Engineering & UT Austin	\\
+ \textbf{Introduction to Biomedical Design Principals} \\
+ \multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{An introduction to the concepts of creative design, engineering analysis, reverse engineering, concept selection, and fabrication of biomedical engineering devices for undergraduate students. The course offers the students the opportunity to work on designing their own variants of drug delivery systems and robotic appendages under guidance and supervision. Assisted with coordinating the labs grading.
+}\\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{tabularx}{0.965\textwidth}{X r}
+ \textbf{Teaching Assistant} & \textbf{Spring 2012} \\
+ \it Department of Biomedical Engineering & UT Austin	\\
+ \textbf{Engineering Probability and Statistics} \\
+ \multicolumn{2}{p{\dimexpr0.965\textwidth-2\tabcolsep-2\arrayrulewidth}}{An undergraduate course on the fundamentals of probability, random processes, and statistics with the emphasis on biomedical engineering application. Includes hypothesis testing, regression, and sample size calculations. Ran study sessions, assisted with creating homework and assignments, grading and maintaining attendance records.
+}\\
+\end{tabularx}
+
+%-----------------------------------------------------------------------------
+
+
+
+
+% Make the Journal Publications section-----------------------------
+
+% make the section title
+\section{Peer Reviewed Journal Publications}
+\hrule
+\normalsize
+\vspace{1em}
+
+
+\nocitepub{*}
+{\removebibheader
+ \bibliographypub{WZCVpub}
+}
+%-----------------------------------------------------------------------------
+
+
+
+% Make the CONFERENCE PRESENTATION section-----------------------------
+
+% make the section title
+\section{Conference Presentations (Podium)}
+\hrule
+\normalsize
+\vspace{1em}
+
+
+\nociteconf{*}
+{\removebibheader
+ \bibliographyconf{WZCVconf}
+}
+%-----------------------------------------------------------------------------
+
+
+
+% Make the CONFERENCE ABSTRACTS section-----------------------------
+
+% make the section title
+\section{Other Conference Proceedings}
+\hrule
+\normalsize
+\vspace{1em}
+
+
+\nocitepos{*}
+{\removebibheader
+ \bibliographypos{WZCVpos}
+}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
